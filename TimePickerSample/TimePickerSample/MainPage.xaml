@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TimePickerSample"
+             xmlns:timepicker="clr-namespace:Syncfusion.XForms.Pickers;assembly=Syncfusion.SfPicker.XForms"
+             x:Class="TimePickerSample.MainPage">
+
+    <ContentPage.Content>
+        <Grid>
+            <timepicker:SfTimePicker x:Name="timePicker"
+                                 PickerMode="Dialog"
+                                 PickerWidth="300"
+                                 ShowFooter="True"/>
+            <Button Text="Open Time Picker" 
+                    x:Name="pickerButton"
+                    Clicked="PickerButton_Clicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HeightRequest="50" 
+                    WidthRequest="200"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
